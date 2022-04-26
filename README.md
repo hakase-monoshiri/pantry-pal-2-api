@@ -9,7 +9,7 @@ Goals for this project:
 
 1. Update original pantry pal concept and redesign as an api to power a ReactJS front-end
 
-2. Utilize test driven development 
+2. Utilize tersilst driven development 
 
 
 
