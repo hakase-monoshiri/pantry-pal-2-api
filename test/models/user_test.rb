@@ -9,4 +9,9 @@ class UserTest < ActiveSupport::TestCase
     assert User.first.valid?
   end
     
+  test 'does not save user without email' do
+    user = User.new
+    assert_not user.save
+  end
+  
 end
