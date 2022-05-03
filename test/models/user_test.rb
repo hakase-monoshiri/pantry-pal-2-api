@@ -10,8 +10,8 @@ class UserTest < ActiveSupport::TestCase
   end
     
   test 'does not save user without email' do
-    user = User.new
-    assert_not user.save
+    user = User.new(password_digest: 'password') 
+    assert_not user.save, "Should not save a user with no email"
   end
   
 end
