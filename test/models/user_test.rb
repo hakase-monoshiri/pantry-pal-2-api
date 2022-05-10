@@ -21,8 +21,8 @@ class UserTest < ActiveSupport::TestCase
     user_2 = User.new(email: "notanemailaddress", password_digest: 'password')
     user_3 = User.new(email: "anemail@addr.ess", password_digest: 'password')
 
-    assert_not user.save, "email  should not allow spaces"
-    assert_not user_2.save, "email  should have an @ and a ."
+    assert_not user.save, "email should not allow spaces"
+    assert_not user_2.save, "email should have an @ and a ."
     assert user_3.save
   end
   
