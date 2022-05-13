@@ -9,5 +9,5 @@ class PantryTest < ActiveSupport::TestCase
     assert_not_nil Pantry.first.ingredients, 'Should have included ingredients'
   end
 
-  
+
 end
