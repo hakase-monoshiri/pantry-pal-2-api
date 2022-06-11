@@ -7,3 +7,8 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 User.create(name: "Eben Eleazer", email:"ebenaeleazer@outlook.com", password_digest: "PantryPal")
+
+
+Pantry.create(name: "Eben's Pantry", description: "For Food", user_id: 1)
+
+Ingredient.create( name: "Flour", description: "wheat powder", quantity: 0.5, unit_of_measure: "g", pantry_id: 1)
