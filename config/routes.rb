@@ -4,7 +4,15 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }, defaults: { format: :json }
+  devise_for :users, 
+    controllers: { 
+      omniauth_callbacks: 'users/omniauth_callbacks',
+      sessions: 'users/sessions',
+      registrations: 'users/registrations',
+      }, 
+    defaults: { format: :json }
+    
+  get '/member-data', to: 'members#show'
 
   resources :pantries
 
