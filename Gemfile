@@ -51,10 +51,17 @@ gem "bootsnap", require: false
 # Use Devise for user authorization
 gem 'devise'
 
+# Use Devise-JWT to use frontend web tokens 
+gem 'devise-jwt'
+
+# Use omniauth to enable login wih Google (and others)
 gem 'omniauth'
 gem "omniauth-rails_csrf_protection"
 
 gem 'omniauth-google-oauth2'
+
+# Use gem cors to allow for Cross Origin Resources (sharing data with different domains)
+gem 'rack-cors'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
