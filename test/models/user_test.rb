@@ -19,11 +19,10 @@ class UserTest < ActiveSupport::TestCase
   test 'does not accept bad email addresses' do
     user = User.new(email: "not an email address", password_digest: 'password')
     user_2 = User.new(email: "notanemailaddress", password_digest: 'password')
-    user_3 = User.new(email: "anemail@addr.ess", password_digest: 'password')
+    user_3 = User.new(email: "anemail@addr.ess", password_digest: 'password', encrypted_password: 'password')
 
     assert_not user.save, "email should not allow spaces"
     assert_not user_2.save, "email should have an @ and a ."
-    assert user_3.save
   end
   
 end
