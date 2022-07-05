@@ -12,7 +12,9 @@ Rails.application.routes.draw do
       }, 
     defaults: { format: :json }
     
-  get '/member-data', to: 'members#show'
+  namespace :users do
+    get '/member-data', to: 'members#show'
+  end
 
   resources :pantries
 
