@@ -9,6 +9,7 @@ class User < ApplicationRecord
          omniauth_providers: [:google_oauth2]
         
     has_many :pantries
+    has_many :ingredients, through: :pantries
 
     validates :email, :uniqueness => true
     validates_with EmailValidator

@@ -24,5 +24,15 @@ class UserTest < ActiveSupport::TestCase
     assert_not user.save, "email should not allow spaces"
     assert_not user_2.save, "email should have an @ and a ."
   end
+
+  test 'Has a pantry' do
+
+    assert users(:one).pantries
+  end
+
+  test 'Can get to ingeredients through pantries' do
+
+    assert users(:one).ingredients, "Should be able to access ingreidients in a pantry"
+  end
   
 end
