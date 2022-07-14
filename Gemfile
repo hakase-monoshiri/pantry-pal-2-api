@@ -63,6 +63,9 @@ gem 'omniauth-google-oauth2'
 # Use gem cors to allow for Cross Origin Resources (sharing data with different domains)
 gem 'rack-cors'
 
+# Use gem HTTParty to help wrap external api calls
+gem 'httparty'
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
