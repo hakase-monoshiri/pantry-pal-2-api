@@ -4,8 +4,22 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+one:
+  name: Chicken Sandwicth
+  source: recipes
+  url: www.recipes.com
+  yield: 4
+  ingredient_text: put chicken on bread
+  calories: 500
+  cuisine_type: American
 # column: value
 #
-two: {}
+two: 
+  name: Beef Stroganoff
+  source: Internet Foods
+  url: www.internetfoods.com
+  yield: 6
+  ingredient_text: beef and nooodles
+  calories: 800
+  cuisine_type: Russian
 # column: value

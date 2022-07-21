@@ -4,8 +4,16 @@
 # model remove the "{}" from the fixture names and add the columns immediately
 # below each fixture, per the syntax in the comments below
 #
-one: {}
+one: 
+  name: Eggs
+  description: from chickens
+  quantity: 12
+  unit_of_measure: count
 # column: value
 #
-two: {}
+two: 
+  name: Milk
+  description: from cows
+  quantity: 100
+  unit_of_measure: l
 # column: value
