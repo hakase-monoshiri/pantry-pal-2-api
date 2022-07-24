@@ -7,7 +7,11 @@ my original Pantry Pal application which was a CLI application made in plain rub
 ## User Experience
 
 A user logs into the app and has access to a virtual pantry. The pantry models the foods and thier
-amounts located in the user's actual home. 
+amounts located in the user's actual home. The user can look at the pantry pal app and see what foods
+they own, and the amount of each ingerdient. 
+
+The user will also be able to use a seperate view to search for recipes. They can also choose to view recipes 
+that they are able to make based on the ingredients currently on hand. 
 
 
 Goals for this project:
